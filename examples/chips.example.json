@@ -1,0 +1,22 @@
+{
+  "//": "Example custom-chip database. Load with: --chip-db chips.example.json",
+  "//2": "Addresses are data-space addresses (I/O address + 0x20 for classic I/O).",
+  "chips": [
+    {
+      "name": "ATmega8A",
+      "family": "ATMEGA",
+      "flash": 8192,
+      "sram": 1024,
+      "eeprom": 512,
+      "ramStart": "0x60",
+      "sfr": {
+        "SREG": "0x5F", "SPL": "0x5D", "SPH": "0x5E",
+        "PINB": "0x36", "DDRB": "0x37", "PORTB": "0x38",
+        "UDR": "0x2C", "UCSRA": "0x2B", "UCSRB": "0x2A", "UBRRL": "0x29"
+      },
+      "vectors": {
+        "RESET": 0, "INT0": 1, "TIMER0_OVF": 9, "USART_RXC": 11
+      }
+    }
+  ]
+}
