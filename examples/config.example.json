@@ -1,0 +1,21 @@
+{
+  // Example configuration file. Pass with: --config config.example.json
+  // Any value here can still be overridden on the command line.
+  "chip": "ATmega8",
+  "input": "examples/blink.pas",
+  "output": "build/blink.s",
+  "clock": "8MHz",
+  "optimize": "speed",
+  "fuses": {
+    "lfuse": "0xE1",
+    "hfuse": "0xD9"
+  },
+  "uartBaud": 9600,
+  "adcBits": 10,
+  "comments": true,
+  "debug": false,
+  "alignData": false,
+  "listing": true,
+  "map": true,
+  "defines": ["BOARD_V2"]
+}

@@ -1,0 +1,23 @@
+# Maven
+target/
+*.class
+
+# Generated example artifacts
+examples/out/
+
+# Editors / IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AVR build artifacts
+*.elf
+*.hex
+*.o
